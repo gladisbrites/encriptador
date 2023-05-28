@@ -153,10 +153,42 @@ body{
 }
 
 footer{
- 
+ color: #F3F5FC;
     text-align: center;
     height: 10%;
     width: 100%;
     font-size: 14px;
-    padding-top: 5px;
+    padding:20px;
+    background: #0A3871;
+}
+
+@media screen and (max-width:480px){
+    .container{
+        height: auto;
+        width: auto;
+
+    }
+    .botones{
+        font-size: auto;
+        width: 50;
+
+    }
+    .izquierda{
+        margin-bottom: 5%;
+    }
+     .izquierda, .derecha{
+        float: inherit;
+        width: 100%;
+        height: auto;
+        margin-left: 5%;
+     
+    }
+    .text-area, .informacion, .mensaje{
+        width: 80%;
+        margin-left: 2%;
+    }
+   
+    #imgDerecha{
+        display: none;
+    }
 }
