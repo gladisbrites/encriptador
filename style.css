@@ -17,19 +17,15 @@ body{
 }
 .logo{
    
-    width: 100%;
+    width: 10%;
     height: 10%;
+    display: inline-block;
 }
 .img-logo{
     padding-top: 5px;
-    float: inherit;
+   
 }
-.title{
-    display: inline-flex;
-    margin-left: 15%;
-    padding-bottom: 10px;
-    float: inherit;
-}
+
 .principal{
     height: 80%;
 }
@@ -49,7 +45,7 @@ body{
     margin-left: 10%;
     margin-top: 5%;
     width: 80%;
-    height: 60%;
+    height: 80%;
     text-transform: lowercase; /*transform el texto en minuscula el lowercase*/
 
 }
@@ -109,7 +105,7 @@ body{
     
 #imgDerecha{
     margin-left: 5%;
-    margin-top: 20%;
+    margin-top: 10%;
     width: 90%;
     height: auto;
 
@@ -117,7 +113,9 @@ body{
 #texto{
     margin-left: 7%;
     margin-right: 5%;
+    padding-bottom: 5%;
     text-align: center;
+   
 }
 .mensaje{
     float: left;
@@ -144,31 +142,18 @@ body{
     border: 1px solid #0A3871;
     border-radius: 24px;
     color: #0A3871;
-    
+    box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 
-/*.btn-copiar{
-   
-    border: 1px solid #0A3871;
-    border-radius: 24px;
-    color:#0A3871;
-    cursor: pointer;
-    height: 67px;
-    margin-left:108px;
-    margin-top: 100px;
-    position: absolute;
-    width: 336px;
-}*/
 .informacion{
     color: #495057;
-    font-size: 18px;
+    font-size: 12px;
     margin-left: 10%
 }
 
 footer{
-    display: block;
-    
+ 
     text-align: center;
     height: 10%;
     width: 100%;
