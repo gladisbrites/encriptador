@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="container">
+        <header class="logo">
+                <img class="img-logo" src="imagenes/Logo.png" alt="Logo de Alura">
+                <h1 class="title">Encriptador de Mensajes</h1>
+        </header>
+        <main class="principal">
+            <section class="izquierda">
+                <textarea class="text-area" id="textoEntrada" cols="20" rows="6" placeholder="Ingrese el texto aquí"></textarea>
+                <div>
+                    <h6 class="informacion"> *Solo letras minúnsculas y sin acentos </h6>
+                </div>
+                <div class="botones">
+                    <button type="button" class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button type="button" class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+             <section class="derecha">
+                <img src="imagenes/Muñeco.png" alt="foto muñeco" id="imgDerecha">
+                <h2 id="texto">Ningún mensaje fue encontrado</h2>
+                <textarea id ="msj" class="mensaje" cols="80" rows="8">ingrese el texto que desees encriptar o desencriptar</textarea>
+                <div>
+                    <button id="copiar" class="btn-copiar"> Copiar</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+          <p class="copyright">&copy Copyright Gladis Angelica Brites - 2023 &#10084</p>
+       </footer>
+
+    </div>
+   <script src="script.js"></script> 
+</body>
+</html>
