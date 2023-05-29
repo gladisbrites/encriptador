@@ -8,7 +8,8 @@ La letra "u" es convertida para "ufat"*/
 const textArea = document.querySelector(".text-area");
 const mensaje =document.querySelector(".mensaje");
 const copia = document.querySelector(".btn-copiar");
-copia.style.display = "none";
+/*copia.style.display = "none";*/
+
 
 function validarTexto(){
     let textoEscrito = document.querySelector(".text-area").value;
@@ -28,7 +29,7 @@ function btnEncriptar(){
         document.getElementById("imgDerecha").style.display = "none";
         document.getElementById("texto").style.display = "none";
         textArea.value = "";  
-        copia.style.display = "block"
+        /*copia.style.display = "block"*/
     }
       
 }
