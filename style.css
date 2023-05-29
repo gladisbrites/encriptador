@@ -180,12 +180,12 @@ footer{
         float: inherit;
         width: 100%;
         height: auto;
-        margin-left: 5%;
+        margin-left: 2%;
      
     }
     .text-area, .informacion, .mensaje{
         width: 80%;
-        margin-left: 2%;
+        
     }
    
     #imgDerecha{
