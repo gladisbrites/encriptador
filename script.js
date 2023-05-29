@@ -5,10 +5,12 @@ La letra "o" es convertida para "ober"
 La letra "u" es convertida para "ufat"*/
 
 
+
+
 const textArea = document.querySelector(".text-area");
 const mensaje =document.querySelector(".mensaje");
-const copia = document.querySelector(".btn-copiar");
-/*copia.style.display = "none";*/
+/*const copia = document.querySelector(".btn-copiar");
+copia.onclick = copiar;*/
 
 
 function validarTexto(){
@@ -29,7 +31,7 @@ function btnEncriptar(){
         document.getElementById("imgDerecha").style.display = "none";
         document.getElementById("texto").style.display = "none";
         textArea.value = "";  
-        /*copia.style.display = "block"*/
+       
     }
       
 }
@@ -70,10 +72,25 @@ function desencriptar(stringDesencriptada){
     return stringDesencriptada;
 }
 
+//no funciona con Android
 
-function copiar(){
-    mensaje.select();
+/*function copiar(){
+    /*mensaje.select();
     navigator.clipboard.writeText(mensaje.value);
     mensaje.value = "";
     alert("se copió exitosamente el texto");
+}*/
+//funcion para probar si funciona on Android
+function copiar() {
+    var copyText = document.getElementById("msj");
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    navigator.clipboard
+      .writeText(copyText.value)
+      .then(() => {
+        alert("el mensaje fue copiado exitosamente");
+      })
+      .catch(() => {
+        alert("no se logró copiar el mensaje");
+      });
 }
