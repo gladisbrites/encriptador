@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel ="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="dark_styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@200&display=swap" rel="stylesheet">
     <title>Encriptador de mensaje</title>
 </head>
@@ -15,7 +17,11 @@
     <div class="container">
         <header class="logo">
                 <img class="img-logo" src="imagenes/Logo.png" alt="Logo de Alura">
-        </header>
+                <button class="darkModeSwitch ms-2" id="switch">
+                    <span><i class="fas fa-sun"></i></span>
+                    <span><i class="fas fa-moon"></i></span> 
+                    </button>
+            </header>
         <main class="principal">
             <section class="izquierda">
                 <textarea class="text-area" id="textoEntrada" cols="20" rows="6" placeholder="Ingrese el texto aquí"></textarea>
@@ -42,5 +48,6 @@
     <p class="copyright">&copy Copyright - Gladis Angelica Brites - 2023 &#10084</p>
  </footer>
  <script src="script.js"></script> 
+ <script type="text/javascript" src="dark_js.js"></script>
 </body>
 </html>

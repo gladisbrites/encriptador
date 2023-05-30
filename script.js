@@ -80,7 +80,7 @@ function desencriptar(stringDesencriptada){
     mensaje.value = "";
     alert("se copió exitosamente el texto");
 }*/
-//funcion para probar si funciona on Android
+//funcion para probar si funciona con Android
 function copiar() {
     var copyText = document.getElementById("msj");
     copyText.select();
