@@ -2,7 +2,7 @@ body.dark  {   background:  #333; }
 body.dark section  {   background:  #333; }
 body.dark textarea  {   background:  #333; 
 color: white;}
-::placeholder{ color:white;}
+::placeholder{ color:rgb(146, 183, 239);}
 body.dark h2,body.dark h6 {   color:#fff}
 
 
